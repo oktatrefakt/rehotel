@@ -37,7 +37,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
 System.out.print("Kérem a szobaszámot:");
-String roomNumber = scanner.nextLine();
+String z = scanner.nextLine();
 
     System.out.print("Vendég neve: ");
     String guestName = scanner.nextLine();
@@ -61,10 +61,10 @@ mentésre.
         String checkOutDate = scanner.nextLine();
 
         String e = 
-            roomNumber + ":" +
+            z + ":" +
             guestName + ":" +
             checkInDate + ":" +
-            checkOutDate + "\n";
+            checkOutDate;
         
         /* Meghívjuk a mentés végző metódust.
            Ez a Tar osztályban található. A
