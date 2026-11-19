@@ -14,18 +14,18 @@ package com.example;
 //használt osztályok
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.charset.Charset;
+    import java.io.PrintWriter;
+    import java.nio.charset.Charset;
 
 /* Az osztály, ami ment */
 public class Tar {
 
     //mentés hozzáfűzéssel
-    public static void mento(String content) {
-        try {
-        FileWriter fileWriter = new FileWriter(
-            "reservations.txt", 
-            Charset.forName("utf-8"), true);
+public static void mento(String content) {
+     try {
+     FileWriter fileWriter = new FileWriter(
+  "reservations.txt", 
+  Charset.forName("utf-8"), true);
         PrintWriter printWriter = new PrintWriter(fileWriter);
             printWriter.println(content);
 
